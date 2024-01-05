@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and Afer pseudo selectors</title>
+    <style>
+        body {
+            background-color: rgb(15, 15, 15);
+            color: azure;
+        }
+
+        .navigation {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding-left: 34px;
+            margin: auto;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section h3 {
+            text-align: center;
+            font-size: 34px;
+        }
+            section::after  {
+                content: "Web  deploper submit the abhishek maurya";
+                margin-right: 23px;
+                text-align: right;
+                padding-top: 23px;
+            
+        }
+
+        section::before {
+            content: "Web  deploper name abhishek maurya";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">HOME</li>
+                <li class="item">ABOUT</li>
+                <li class="item">SERVICES</li>
+                <li class="item">CONTACT US</li>
+            </ul>
+        </nav>
+        <SECTION>
+            <H3>Welcome to coding world</H3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor neque modi, doloremque reprehenderit
+                corrupti ducimus exercitationem voluptatum voluptatibus quasi deleniti illo eveniet perspiciatis
+                laboriosam aut, labore maxime facere minus repellendus. Dolorem iure reiciendis culpa at possimus
+                laborum facilis neque facere quis, voluptatem est, nulla non?</p>
+        </SECTION>
+    </header>
+</body>
+
+</html>
